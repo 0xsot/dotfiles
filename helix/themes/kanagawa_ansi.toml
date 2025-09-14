@@ -1,0 +1,156 @@
+# Kanagawa
+# Author: zetashift
+
+# Adaptation of https://github.com/rebelot/kanagawa.nvim
+# Original author: rebelot
+# All credits to the original author, the palette is taken from the README
+# because of some theming differences, it's not an exact copy of the original.
+
+## User interface
+"ui.selection" = { bg = "waveBlue2" }
+"ui.selection.primary" = { bg = "waveBlue2" }
+"ui.background" = { fg = "fujiWhite", bg = "sumiInk1" }
+
+"ui.linenr" = { fg = "sumiInk6" }
+"ui.linenr.selected" = { fg = "roninYellow", modifiers = ["bold"] }
+"ui.gutter" = { fg = "sumiInk6", bg = "sumiInk4" }
+
+"ui.virtual" = "sumiInk6"
+"ui.virtual.ruler" = { bg = "sumiInk2" }
+"ui.virtual.inlay-hint" = "sumiInk6"
+"ui.virtual.jump-label" = { fg = "peachRed", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "oldWhite", bg = "sumiInk0" }
+"ui.statusline.inactive" = { fg = "fujiGray", bg = "sumiInk0" }
+"ui.statusline.normal" = { fg = "sumiInk0", bg = "crystalBlue", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "sumiInk0", bg = "autumnGreen", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "sumiInk0", bg = "oniViolet", modifiers = ["bold"] }
+# Malformed ANSI: "". See 'https://github.com/helix-editor/helix/issues/5709'
+# "ui.statusline.separator" = { fg = "", bg = "" }
+
+"ui.bufferline" = { fg = "fujiGray", bg = "sumiInk0" }
+"ui.bufferline.active" = { fg = "oldWhite", bg = "sumiInk0" }
+"ui.bufferline.background" = { bg = "sumiInk0" }
+
+"ui.popup" = { fg = "fujiWhite", bg = "sumiInk0" }
+"ui.window" = { fg = "sumiInk0" }
+"ui.help" = { fg = "fujiWhite", bg = "sumiInk0" }
+"ui.text" = "fujiWhite"
+"ui.text.focus" = { fg = "fujiWhite", bg = "waveBlue2", modifiers = ["bold"] }
+
+"ui.cursor" = { fg = "waveBlue1", bg = "waveAqua2" }
+"ui.cursor.primary" = { fg = "waveBlue1", bg = "fujiWhite" }
+"ui.cursor.match" = { fg = "waveRed", modifiers = ["bold"] }
+"ui.highlight" = { fg = "fujiWhite", bg = "waveBlue2" }
+"ui.menu" = { fg = "fujiWhite", bg = "waveBlue1" }
+"ui.menu.selected" = { fg = "fujiWhite", bg = "waveBlue2", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "oldWhite", bg = "waveBlue1" }
+
+"ui.cursorline.primary" = { bg = "sumiInk3" }
+"ui.cursorcolumn.primary" = { bg = "sumiInk3" }
+
+"ui.debug.breakpoint" = "springBlue"
+"ui.debug.active" = "winterRed"
+
+"diagnostic.error" = { underline = { color = "samuraiRed", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "roninYellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "dragonBlue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "waveAqua1", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+error = "samuraiRed"
+warning = "roninYellow"
+info = "dragonBlue"
+hint = "waveAqua1"
+
+## Diff
+"diff.plus" = "autumnGreen"
+"diff.minus" = "autumnRed"
+"diff.delta" = "autumnYellow"
+
+## Syntax highlighting
+"attribute" = "waveRed"
+"type" = "waveAqua2"
+"type.builtin" = "springBlue"
+"constructor" = "springBlue"
+"constant" = "surimiOrange"
+"constant.numeric" = "sakuraPink"
+"constant.character.escape" = { fg = "boatYellow2", modifiers = ["bold"] }
+"string" = "springGreen"
+"string.regexp" = "boatYellow2"
+"string.special.url" = "springBlue"
+"string.special.symbol" = "oniViolet"
+"comment" = "fujiGray"
+"variable" = "fujiWhite"
+"variable.builtin" = "waveRed"
+"variable.parameter" = "oniViolet2"
+"variable.other.member" = "carpYellow"
+"label" = "springBlue"
+"punctuation" = "springViolet2"
+"keyword" = { fg = "oniViolet", modifiers = ["italic"] }
+"keyword.control.return" = "peachRed"
+"keyword.control.exception" = "peachRed"
+"keyword.directive" = "waveRed"
+"operator" = "boatYellow2"
+"function" = "crystalBlue"
+"function.builtin" = "springBlue"
+"function.macro" = "waveRed"
+"tag" = "waveAqua2"
+"namespace" = "surimiOrange"
+"special" = "peachRed"
+
+## Markup modifiers
+"markup.heading.marker" = "springViolet2"
+"markup.heading" = { fg = "crystalBlue", modifiers = ["bold"] }
+"markup.list" = "oniViolet"
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.text" = { fg = "springBlue" }
+"markup.link.url" = { fg = "sakuraPink" }
+"markup.link.label" = "surimiOrange"
+"markup.quote" = "springViolet1"
+"markup.raw" = "springGreen"
+
+[palette]
+seaFoam = "252"       # custom lighter foreground
+fujiWhite = "187"     # default foreground
+oldWhite = "180"      # dark foreground, e.g. statuslines
+sumiInk0 = "233"      # dark background, e.g. statuslines, floating windows
+sumiInk1 = "234"      # default background
+sumiInk2 = "235"      # lighter background, e.g. colorcolumns, folds
+sumiInk3 = "237"      # lighter background, e.g. cursorline
+sumiInk4 = "235"      # darker foreground, e.g. linenumbers, fold column
+sumiInk6 = "240"      # inlay hints
+waveBlue1 = "236"     # popup background, visual selection background
+waveBlue2 = "239"     # popup selection background, search background
+winterGreen = "236"   # diff add background
+winterYellow = "238"  # diff change background
+winterRed = "235"     # diff deleted background
+winterBlue = "235"    # diff line background
+autumnGreen = "101"   # git add
+autumnRed = "131"     # git delete
+autumnYellow = "179"  # git change
+samuraiRed = "167"    # diagnostic error
+roninYellow = "215"   # diagnostic warning
+waveAqua1 = "66"     # diagnostic info
+dragonBlue = "66"    # diagnostic hint
+fujiGray = "242"      # comments
+springViolet1 = "103" # light foreground
+oniViolet = "103"     # statements and keywords
+oniViolet2 = "146"    # parameters
+crystalBlue = "110"   # functions and titles
+springViolet2 = "146" # brackets and punctuation
+springBlue = "110"    # specials and builtins
+lightBlue = "152"     # not used!
+waveAqua2 = "109"     # types
+springGreen = "107"   # strings
+boatYellow1 = "101"   # not used
+boatYellow2 = "143"   # operators, regex
+carpYellow = "186"    # identifiers
+sakuraPink = "174"    # numbers
+waveRed = "168"       # standout specials 1, e.g. builtin variables
+peachRed = "203"      # standout specials 2, e.g. exception handling, returns
+surimiOrange = "215"  # constants, imports, booleans
+katanaGray = "243"    # deprecated

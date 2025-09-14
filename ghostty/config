@@ -1,4 +1,4 @@
-font-size = 12.4
+font-size = 12.1
 shell-integration-features = no-cursor,sudo,no-title
 window-save-state = always
 window-inherit-working-directory = true
@@ -12,12 +12,13 @@ font-thicken = true
 grapheme-width-method = unicode
 macos-icon = xray
 shell-integration = fish
+unfocused-split-opacity = 1
 
 window-padding-balance = true 
 window-save-state = always
 macos-titlebar-style=transparent
 window-colorspace = "display-p3"
-theme = Kanagawa Dragon
+theme = melange_dark
 
 # keybindings
 keybind = cmd+a>r=reload_config
@@ -58,3 +59,4 @@ keybind = cmd+a>9=goto_tab:9
 
 # other
 copy-on-select = clipboard
+keybind = shift+enter=text:\n
