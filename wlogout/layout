@@ -1,0 +1,25 @@
+{
+    "label" : "lock",
+    "action" : "hyprlock",
+    "text" : "LOCK"
+}
+{
+    "label" : "logout",
+    "action" : "pkill niri",
+    "text" : "LOGOUT"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "SLEEP"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "REBOOT"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "POWER OFF"
+}

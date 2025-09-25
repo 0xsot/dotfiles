@@ -1,0 +1,33 @@
+/* Ultra-minimal Meliora theme for wlogout */
+
+* {
+    background-image: none;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+window {
+    background-color: rgba(28, 25, 23, 0.95);
+}
+
+button {
+    color: #aaa7a6;
+    background: none;
+    border: none;
+    margin: 40px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+button:focus,
+button:hover {
+    color: #dad7d5;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: #a49db9;
+    text-decoration-thickness: 2px;
+}
+
+button:active {
+    color: #a49db9;
+}

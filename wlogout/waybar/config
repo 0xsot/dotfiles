@@ -1,0 +1,30 @@
+{
+  "layer": "top",
+  "margin-top": 0,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "spacing": 0,
+  "include": [
+    "/home/0x/.config/waybar/modules.jsonc"
+  ],
+  "modules-left": [
+    "niri/workspaces",
+    "custom/media"
+  ],
+  "modules-center": [
+    "niri/window"
+  ],
+  "modules-right": [
+    "custom/updates",
+    "backlight",
+    "pulseaudio",
+    "battery",
+    "network",
+    "cpu",
+    "memory",
+    "power-profiles-daemon",
+    "custom/swayidle",
+    "clock"
+  ]
+}

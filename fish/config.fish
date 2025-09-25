@@ -14,15 +14,15 @@ if status is-interactive
     set -gx VISUAL vim
 
     # Compiler tools
-    set -gx CC /opt/homebrew/opt/llvm/bin/clang
-    set -gx AR /opt/homebrew/opt/llvm/bin/llvm-ar
+    set -gx CC /usr/bin/clang
+    set -gx AR /usr/bin/llvm-ar
     set -gx GECKODRIVER $HOME/work/geckodriver
     set -gx HISTFILE $HOME/.local/share/fish/fish_history
     set -gx SAVEHIST 1000000
     set -gx HISTSIZE 1000000
     set -gx LS_COLORS 'ow=36:di=34:fi=32:ex=31:ln=35:'
     set -gx GPG_TTY (tty)
-    set -gx PKG_CONFIG_PATH (brew --prefix)/lib/pkgconfig $PKG_CONFIG_PATH
+    set -gx PKG_CONFIG_PATH usr/lib/pkgconfig $PKG_CONFIG_PATH
 
     # Manpages
     set -gx LESS_TERMCAP_md (echo -e '\e[32m')
@@ -37,9 +37,7 @@ if status is-interactive
     alias v="vim"
     alias zlw="zellij -l welcome"
     alias zshconfig="nvim ~/.zshrc"
-    alias kdf="cd ~/work/komodefi; vim ."
     alias ff="xplr"
-    alias m="man -M $HOME/ubuntu-man"
     alias g="git"
     alias gc="git checkout"
     alias gp="git pull"

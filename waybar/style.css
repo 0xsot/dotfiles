@@ -1,0 +1,164 @@
+/* Meliora Theme for Waybar */
+
+/* Color definitions from Meliora palette */
+@define-color bg_main rgba(28, 25, 23, 0.85);
+@define-color bg_main_tooltip rgba(28, 25, 23, 0.95);
+@define-color bg_hover rgba(48, 45, 43, 0.5);
+@define-color bg_active rgba(164, 157, 185, 0.3);
+@define-color border_main rgba(56, 55, 53, 0.3);
+@define-color content_main #dad7d5;
+@define-color content_inactive rgba(170, 167, 166, 0.5);
+@define-color accent_blue #a49db9;
+@define-color accent_orange #cbab8a;
+@define-color accent_yellow #c9b58e;
+@define-color accent_red #d29595;
+@define-color accent_magenta #b494af;
+
+* {
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    font-family: "Iosevka Nerd Font", "Font Awesome 6 Free", monospace;
+    font-weight: 300;
+    font-size: 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+window#waybar {
+    background: @bg_main;
+    border-top: 1px solid @border_main;
+    color: @content_main;
+}
+
+tooltip {
+    background: @bg_main_tooltip;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @border_main;
+}
+
+tooltip label {
+    color: @content_main;
+}
+
+#workspaces {
+    color: transparent;
+    margin-right: 4px;
+    margin-left: 14px;
+}
+
+#workspaces button {
+    padding: 3px 3px;
+    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: @content_inactive;
+}
+
+#workspaces button:hover {
+    background: @bg_hover;
+    color: @content_main;
+}
+
+#workspaces button.active {
+    color: @accent_blue;
+    background: @bg_active;
+}
+
+#workspaces button.focused {
+    color: @content_main;
+    background: @bg_active;
+}
+
+#workspaces button.urgent {
+    background: rgba(210, 149, 149, 0.5);
+    color: @accent_red;
+}
+
+#custom-media,
+#custom-updates,
+#backlight,
+#pulseaudio,
+#battery,
+#network,
+#custom-weather,
+#cpu,
+#memory,
+#power-profiles-daemon,
+#custom-swayidle,
+#clock {
+    margin: 0 10px 0 0;
+    padding: 2px 2px;
+}
+
+#clock {
+    color: @accent_yellow;
+}
+
+#network {
+    color: @accent_blue;
+}
+
+#network.disconnected {
+    color: @content_inactive;
+}
+
+#pulseaudio {
+    color: @accent_orange;
+}
+
+#pulseaudio.muted {
+    color: @content_inactive;
+}
+
+#cpu {
+    color: @accent_orange;
+}
+
+#memory {
+    color: @accent_magenta;
+}
+
+#power-profiles-daemon {
+    margin: 0 16px 0 0;
+    font-size: 19px;
+    color: @accent_blue;
+}
+
+#custom-swayidle {
+    margin: 0px 8px 0 0;
+    color: @accent_yellow;
+}
+
+#battery.good {
+    color: @accent_yellow;
+}
+
+#battery.warning {
+    color: @accent_orange;
+}
+
+#battery.critical {
+    color: @accent_red;
+}
+
+#battery.charging {
+    color: @content_main;
+}
+
+#custom-media {
+    color: @accent_magenta;
+}
+
+#backlight {
+    color: @accent_yellow;
+}
+
+#temperature {
+    color: @content_main;
+}
+
+#temperature.critical {
+    color: @accent_red;
+}
