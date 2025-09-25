@@ -3,7 +3,7 @@
 Personal configuration files for a Niri-based Wayland desktop environment with Custom theme.
 
 ![](./screenshots/Screenshots%20from%202025-09-25%2004-05-13.png)
-![](./screenshots/Screenshots%20from%202025-09-25%2004-02-53.png)
+![](./screenshots/Screenshots%20from%202025-09-25%2004-36-36.png)
 ![](./screenshots/Screenshots%20from%202025-09-25%2004-02-59.png)
 ![](./screenshots/Screenshots%20from%202025-09-25%2004-03-55.png)
 
